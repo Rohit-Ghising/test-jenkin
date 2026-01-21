@@ -1,6 +1,6 @@
 // Ktt2BF0zay778cl6xdOTXJXB
 
-pipelinee{
+pipeline{
   agent any
   environment {
     VERCEL_TOKEN = credentials ('vercel_token')
