@@ -15,9 +15,8 @@ node{
     echo "Deploying to ec2"
     sh """
     sudo mkdir -p ${appDir}
-    sudo chown -R 
-    jenkins:jenkins ${appDir}
-    rsync -av --deleteDir --exclude='.git' --exclude='node_modules' ./ ${appDir}
+    sudo chown -R jenkins:jenkins ${appDir}
+  rsync -av --deleteDir --exclude='.git' --exclude='node_modules' ./ ${appDir}
       
       cd ${appDir}
       sudo npm install
